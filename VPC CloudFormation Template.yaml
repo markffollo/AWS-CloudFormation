@@ -91,7 +91,7 @@ Resources:
     Type: AWS::EC2::SecurityGroup
     Properties:
       GroupName: "SSH and HTTPS traffic"
-      GroupDescription: "SSH or HTTPS traffic in, all traffic out."
+      GroupDescription: "SSH or HTTPS traffic in"
       VpcId: !Ref VPC
       SecurityGroupIngress:
         - IpProtocol: tcp
